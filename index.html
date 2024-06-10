@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Solar System</title>
+		<style>
+			body { 
+        margin: 0; 
+        background-color: black;
+      }
+	  .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5a5a5a86;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+			background-color: rgb(18, 18, 18);
+            padding: 6px 3px;
+            text-decoration: none;
+            display: block;
+			color: white;
+			
+        }
+
+        .dropdown-item:hover {
+            background-color: #1f1f1f;
+			color: rgb(218, 205, 56);
+			text-decoration: solid;
+        }
+		</style>
+	</head>
+	<body>
+		<div class="dropdown">
+			<button class="dropdown-item">Методы управления</button>
+			<div class="dropdown-content">
+				<a class="dropdown-item" href="#">W - Приблизить по Z</a>
+				<a class="dropdown-item" href="#">S - Отдалить по Z</a>
+				<a class="dropdown-item" href="#">A - Налево по X</a>
+				<a class="dropdown-item" href="#">D - Направо по X</a>
+				<a class="dropdown-item" href="#">Q - Наверх по Y</a>
+				<a class="dropdown-item" href="#">E - Вниз по Y</a>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+		<script type="module" src="src/CelestialObject.js"></script>
+	</body>
+</html>
